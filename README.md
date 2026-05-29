@@ -59,3 +59,106 @@ En caso de que necesitemos alinear el párrafo a **izquierda**, **derecha**,**ce
 <p align="right"> Párrafo alineado a la derecha párrafo alineado a la derecho párrafo alineado a la derechopárrafo alineado a la derechopárrafo alineado a la derecho párrafo alineado a la derecho párrafo alineado a la derecho párrafo alineado a la derecho párrafo alineado a la derecho párrafo alineado a la derecho párrafo alineado a la derecho párrafo alineado a la derecho párrafo alineado a la derecho párrafo alineado a la derecho párrafo alineado a la derecho párrafo alineado a la derecho párrafo alineado a la derecho párrafo alineado a la derecho párrafo alineado a la derecho párrafo alineado a la derecho
 
 <p align="justify"> Párrafo justificado  párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado párrafo justificado
+
+
+
+### 4. Enfatizado de Texto
+
+Texto en Negritas: Para realizar texto importante que no sea un titulo por questo inicialmente están en negrita, debemos encerrar el texto desdeado entre dobles asteriscos (**)
+
+Ejemplo: Este texto estan en **negrita**.
+
+- Texto en Cursiva (Italico): Para hacer referencia a texto utilizando el formato inclinado o italico bastará con encerrar el texto deseado entre dos asteriscos simples (*)
+
+Ejemplo: Este *Texto* estara *inclinado*
+
+- Texto en Cursiva y Negrita: Para lograr esta estilización en la documentación basta con juntar ambas configuraciones , es decir encerramos el texto en un triple asterisco (***)
+
+Ejemplo: ***Este texto esta Negrito e Italico.***
+
+- Texto Tachado: En algunas ocaciones es necesario dar formato al texto con un efecto de como es incorrecto, generalmente esta idea se transmite por que el texto esta tachado, es decir con una linea que lo marca por la mitad. Para lograr este efecto tendremos que encerrar el texto entre una doble tilde de (~).
+
+Ejemplo: Se dice haya no ~haiga~.
+
+- Texto Subrayado: En este tipo de formato el texto queda sobre una linea inferior para denotar su relevancia, este formato no tiene una versión rápida en el estandar MARDOWN, pero dado su similaridad a HTML podemos utilizar las etiquetas ``` <u> ``` y ``` </u>```.
+
+Ejemplo: El <u>texto</u> debe estar <u>subrayado</u>.
+
+- Texto en Super Indice: En algunas ocasiones se requiere dar formato a formulas estadisticas que requieren potencias entre otras aplicaciones, podemos utilizar tag de HTML ``` <sup> ``` y ``` </sup> ``` para delimitar el formato.
+
+Ejemplo: Para elevar x al cuadrado tendriamos lo siguiente x<sup>2</sup>
+
+- Texto en Subindice: En el caso de Quimica se utilizan subindices para representar formulas, para ello podemos utilizar el formato de texto con la etiqueta HTML. ``` <sub> ``` y ``` </sub> ```
+
+Ejemplo: La formula del Agua es H<sub>2</sub>0.
+
+
+### 5. Listas
+
+Cuando realizamos documentación utilizando el estandar de MARKDOWN, es común que tengamos que listar elementos, requisitos de hardware, requisitos de software o enumerar pasos de como el sofware debe ser instalado paso a paso, por eso debemos saber como crear listas de las cuales hay de 3 tipos : **Ordenadas (Numeros)** , **Desordenadas (Viñetas)** y **Mixtas (Viñetas y Numeros)**.
+
+1. Listas Ordenadas
+
+Estas deberán estar enumerdas con un numero seguido por un punto y un espacio en blanco para comenzar con el listado.
+1. Pc
+2. Wifi
+3. Modem
+4. Smartphone
+6. Smart TV
+5. Tablet 
+
+Para reiniciar el conteo se debe poner una linea de texto sin numeralia.
+
+2.  Listas Desornedadas
+
+Estas listas no llevan un numero, sino una viñeta(simbolo), y suele listar elementos que no requieren un orden especifico.
+
+- Pan
+- Leche
+- Huevo
+- Azucar
+
+3. Listas Mixta
+
+Son aquellas que mezcla ambos elementos
+
+- 3°A DSM
+1. Juan
+2. Pedro
+3. Alejandra
+- 3°B DSM
+1. Romina
+2. Daniel
+- 3°C DSM
+1. Yahir
+2. Liseth
+3. Jeovany
+4. Erick
+
+### 6. Bloques de Código (CODE BLOCKS) o Citas (BLOCK QUOTES)
+
+Estos estilos de texto se utilizan para limpiar la atencion del lector, en pasos que son importantes, realizar algunas reseñas o segmentar lineas de codigo que se deberaán ingresar en una terminal de comandos o lineas de ejecución.
+
+- Cuadro de Citas (BLOCK QUOTES)
+Son cajas estilizadas en colores grises por defecto con un margen mas claro
+
+Ejemplo
+
+Para listar las carpetas y archivos desde una terminal de comandos en el sistema operativo de Windows debemos usar el comando:
+
+> C:/dir
+
+Despues oprimimos la tecla "Enter":
+
+Tambien podemos usar texto multilineas
+
+EJEMPLO:
+
+Pasos para instalar MYSQL
+> - Descargar el archivo instalador desde la página oficial www.mysql.com
+> - Instalar el Servidor de Base de Datos
+> - Definir el puerto y contraseña para el usuario **root**
+> - Inicializar el servicio de base de datos
+> - Conectarnos a la base de datos para
+
+- Bloques de codigo 
