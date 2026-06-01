@@ -205,3 +205,43 @@ Ejemplo
 
 - Ligas internas
 [Acerca del Autor](./aboutme.md "Cónoceme más!")
+
+### 9. Imágenes
+
+El estándar de markdown nos permite incrustar imágenes dentro de nuestra documentación lo que nos permitirá poner logotipos, capturas de pantalla o cualquier archivo gráfico importante.
+
+La estructura varia un poco de las referencias de hipervinculos, siendo:
+```
+![Texto que el usuario leera](url a donde se encuentra la imágen)
+```
+
+Ejemplo:
+![Gato](./imagenes/gato.jpg)
+
+Es importante comprender que la resolución de la imagen sera la original del archivo.
+
+**Tip PRO**
+Si el tamaño de la imagén no se ajusta a lo que deseas para tu documento, lo más recomendable es ajustar el tamaño del archivo original con algún software procesador de imágenes como : Paint, Illustrator, Ink o Photoshop. pero si quiere modificarlo desde el código, el estandár no tiene parametros definidos por lo que necesitaremos echar líneas de código HTML
+
+Cambiando la estructura de maquetado por la etiqueta ``` <img> ```
+
+Ejemplo:
+
+<img src="./imagenes/gato.jpg" width="100" heigth="50">
+
+### 10. Notas al pie
+
+Si nuestra documentación requiere ubicar notas de importancia o relevancia posterior podemos usar notas de pie de manera dinámica
+
+Nota al pie 1 [^¨first]
+
+Nota al pie 2 [^Second]
+
+Referencias al pie dentro ^[Nota interna] extenso dentro de nuestra documentación.
+
+Segunda referencia la nota 2[^Second].
+
+[^first]: Nota al pie **Puede ser formateada**
+
+y tener múltiples lineas de parrafo 
+[^Second]: Texto de la segunda nota al pie.
