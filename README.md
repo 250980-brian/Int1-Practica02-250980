@@ -245,3 +245,28 @@ Segunda referencia la nota 2[^Second].
 
 y tener múltiples lineas de parrafo 
 [^Second]: Texto de la segunda nota al pie.
+
+[^first]: Texto de la primera nota al pie
+[^second]: texto de la segunda nota al pie
+[^interna]: Texto de la nota interna
+
+### 11. Abreviaciones
+
+El estándar de Markdown (junto con extensiones comunes como markdown-it-abbr) nos permite definir abreviaciones que mostrarán su significado completo cuando el usuario coloque el cursor sobre ellas.
+
+Este formato es inteligente: convierte las coincidencias exactas de la palabra, pero mantiene intactas las entradas parciales o palabras compuestas (por ejemplo, convertirá la palabra "HTML" por separado, pero dejará sin cambios términos como "xxxHTMLyyy").
+
+Para declararlas, se coloca un asterisco seguido de la abreviación entre corchetes, dos puntos y su significado.
+
+Ejemplo:
+
+*[HTML]: Hyper Text Markup Language
+
+### 12. Contenedores Personalizados
+
+Cuando creamos documentación técnica, es fundamental resaltar advertencias, notas importantes o consejos de una manera visualmente llamativa. Para ello, podemos utilizar contenedores personalizados apoyados en bloques de tres puntos dobles (:::) seguidos de la palabra clave o etiqueta del contenedor (como warning, info o danger).
+
+Ejemplo:
+
+::: Advertencia: *Aquí hay dragones*
+:::
